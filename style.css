@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 12pt;
+    line-height: 2;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    display: inline;
+    font-size: 12pt;
+    padding: 15px 10px 15px 0;
+}
+
+header li {
+    display: inline;
+    font-size: 13pt;
+}
+
+header nav nav li {
+    font-size: 11pt;
+}
+
+header ul {
+    margin:0;
+    padding: 12px 0 12px 0;
+    overflow: hidden;
+}
+
+header nav nav li {
+    float: left;
+}
+
+header ul ul 
+{
+    margin-right: 10px;
+}
+
+header ul ul li {
+    display: block;
+    float: none;
+    padding: 0;
+}
+
+header li {    
+    padding: 5px;
+}
+
+header nav nav ul {
+    padding: 0;
+}
+
+header nav {
+    background-color: purple;
+}
+
+header nav nav {
+    background-color: green;
+}
+
+main {
+    padding: 0.5em;
+    clear: both;
+}
