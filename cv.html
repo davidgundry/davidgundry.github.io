@@ -24,23 +24,25 @@
 </head>
 <body>
 <header>
+    <h1>David Gundry</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">DAVID GUNDRY</a></li>
+        <li>CV</li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="">Blog</a></li>
+    </ul>
     <nav>
         <ul>
-            <li><a href="index.html">DAVID GUNDRY</a></li>
-            <li>CV</li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
-        <nav>
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#employment">Employment</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
     </nav>
-</header>
+</nav>
 
 <main>
     <section id="education">
@@ -103,36 +105,6 @@
 <footer>
 
 </footer>
-
 </body>
-
-<script>
-    var a = document.getElementsByTagName("a");
-    for (var i = 0; i < a.length; i++) {
-        if (a[i].hasAttribute("href"))
-        {
-            var href = a[i].getAttribute("href");
-            //if (href)// && href[0] === "#");
-           // {
-                a[i].setAttribute("onClick","updateSection()");
-           // }
-        }
-    }
-
-    function updateSection(section)
-    {
-        var list =  document.getElementsByTagName("main")[0].getElementsByTagName("section");
-        var visibleElement = false;
-        for (var i = 0; i < list.length; i++) {
-                list[i].hidden = true;
-                if (list[i].id === location.hash.substr(1))
-                {
-                    list[i].hidden = false;
-                    visibleElement = true;
-                }
-            }
-            if (!visibleElement)
-                    list[0].hidden = false;
-    }
-</script>
+<script type="text/javascript" src="js.js"></script>
 </html>

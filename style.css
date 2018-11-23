@@ -5,88 +5,69 @@ body {
     line-height: 2;
 }
 
-header {
+body > header h1 {
+    padding: 5px;
+    margin:0;
+    background-color: red;
+    display: none;
+}
+
+body > nav {
     color: white;
 }
 
-header a {
+body > nav a {
     color: white;
     text-decoration: none;
 }
 
-header h1 {
-    padding: 5px;
-    margin:0;
-    background-color: red;
-}
-
-header h2
+body > nav h2
 {
     font-size: 11pt;
     margin:0;
 }
 
-header li:first-of-type {
-    font-size: 12pt;
-    padding: 15px 10px 15px 5px;
-    font-weight: bold;
+body > nav {
+    background-color: purple;
 }
 
-header li {
-    display: inline;
-    font-size: 13pt;
-}
-
-header nav nav li {
-    font-size: 11pt;
-}
-
-header nav nav li:first-of-type {
-    font-size: 11pt;
-    font-weight:  normal;
-    padding:5px;
-}
-
-header nav nav li li:first-of-type {
-    padding:0;
-}
-
-header ul {
+body > nav ul {
     margin:0;
     padding: 12px 0 12px 0;
     overflow: hidden;
 }
 
-header nav nav li {
-    float: left;
-}
-
-header ul ul 
-{
-    margin-right: 10px;
-}
-
-header ul ul li {
-    display: block;
-    float: none;
-    padding: 0;
-}
-
-header li {    
+body > nav > ul > li {
+    display: inline;
+    font-size: 13pt;
     padding: 5px;
 }
 
-header nav nav ul {
+body > nav > ul > li:first-of-type {
+    font-size: 12pt;
+    padding: 15px 10px 15px 5px;
+    font-weight: bold;
+}
+
+body > nav > nav {
+    background-color: green;
+}
+
+body > nav > nav > ul {
     padding: 0;
 }
 
-header nav {
-    background-color: purple;
+body > nav > nav> ul > li {
+    list-style-type: none;
+    font-size: 11pt;
+    float: left;
+    padding: 5px;
 }
 
-header nav nav {
-    background-color: green;
+body > nav > nav > ul > ul {
+    margin-right: 10px;
 }
+
 
 main {
     padding: 5px;
