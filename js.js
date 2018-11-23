@@ -5,7 +5,7 @@ function updateSection(section, e)
         e.preventDefault();
         window.location = "#" + section;
     }
-    var list =  document.getElementsByTagName("main")[0].getElementsByTagName("section");
+    var list =  document.querySelector("main").getElementsByTagName("section");
     var visibleElement = false;
     for (var i = 0; i < list.length; i++)
     {
@@ -30,6 +30,35 @@ for (var i = 0; i < a.length; i++) {
     }
 }
 
+function createSideButton(main, target, content)
+{
+    var backButton = document.createElement("a");
+    backButton.style.cssText = "position: absolute; top: 50%; color: grey; font-size: 60pt; margin: 0; text-decoration: none;";
+    backButton.href = "#"+target;
+    backButton.addEventListener('click', updateSection.bind(null, target), false);
+    backButton.appendChild(document.createTextNode(content));
+    main.appendChild(backButton);
+}
+
+function createSideButtons(x)
+{
+    if (x.matches)
+    {
+        var list =  document.querySelector("main").getElementsByTagName("section");
+        for (var i = 0; i < list.length; i++)
+        {
+            createSideButton(list[i], "", "<");
+            createSideButton(list[i], "", ">");
+        }
+    }
+}
+
+var x = window.matchMedia("(min-width: 500px)") // 480 + 
+createSideButtons(x);
+x.addListener(createSideButtons); // Attach listener function on state changes 
+
+
+
+
 var h = window.location.hash;
-console.log(h);
 updateSection(h ? h.substr(1) : "", null);
