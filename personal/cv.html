@@ -1,8 +1,25 @@
 ---
-layout: page
+layout: base
 title: CV
 permalink: /cv/
 ---
+
+<body>
+{%- include header.html -%}
+
+<nav>
+    {%- include pages-list.html -%}
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<main aria-label="Content">
 
 <section id="education">
         <a name="education"></a>
@@ -64,3 +81,5 @@ permalink: /cv/
         
         <p>Technologies: <ul><li>Unity</li> <li>HTML5 &amp; <li>CSS3</li> <li>Git</li> <li>LaTeX</li> <li>Linux</li></ul></p>
     </section>-->
+</main>
+</body>

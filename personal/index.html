@@ -1,5 +1,41 @@
 ---
-layout: home
+layout: base
 ---
 
-<h1>Design is imagining possible worlds</h1>
+{%- include header.html -%}
+
+<nav>
+    {%- include pages-list.html -%}
+</nav>
+
+<style>
+
+    body
+    {
+        background-color: #f61067;
+    }
+
+    main
+    {
+        color: white;
+        text-align: center;
+        margin-top: 20vh;
+    }
+    
+    h1 { font-size: 200%; font-weight: normal;}
+    
+    main::before {
+        color: white;
+        font-size: 100pt;
+        content:'\25c7';
+        line-height: 100%;
+    }
+    
+    nav {
+        border-bottom: 1px solid white"
+    }
+</style>
+
+<main aria-label="Content">
+    <h1>Design is imagining possible worlds</h1>
+</main>

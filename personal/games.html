@@ -1,8 +1,42 @@
 ---
-layout: page
+layout: base
 title: Games
 permalink: /games/
 ---
+<body>
+{%- include header.html -%}
+
+<nav>
+    {%- include pages-list.html -%}
+    <nav>
+        <ul>
+            <li><details><summary>Games</summary>
+                <ul>
+                    <li><a href="#pastry-chefs">Pastry Chefs</a></li>
+                    <li><a href="#pass-my-pants">Pass My Pants</a></li>
+                    <li><a href="#go-right">Go Right and Get Points</a></li>
+                    <li><a href="#dr-allophone">Flying Machine</a></li>
+                    <li><a href="#escape">Escape from New Cross</a></li>
+                    <li><a href="#roguelike">Phaser Roguelike</a></li>
+                </ul></details>
+            </li>
+            <li><details><summary>Demos</summary>
+                <ul>
+                    <li><a href="#platform-gen">Platform Level Generator</a></li>
+                    <li><a href="#dungeon">Dungeon Generator</a></li>
+                </ul></details>
+            </li>
+            <li><details><summary>Web</summary>
+                <ul>
+                    <li><a href="#csms">Live Action CMS</a></li>
+                    <li><a href="#personal">Personal Website</a></li>
+                </ul></details>
+            </li>
+        </ul>
+    </nav>
+</nav>
+
+<main aria-label="Content">
 <section id="pastry-chefs">
         <a name="pastry-chefs"></a>
         <h2>Pastry Chefs</h2>
@@ -101,5 +135,7 @@ permalink: /games/
         <li><a href="">See the code on GitHub</a></li>
     </ul>
 </section>
+</main>
 
 <script type="text/javascript" src="/assets/games.js"></script>
+</body>
