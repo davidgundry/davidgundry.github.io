@@ -11,7 +11,7 @@ function updateSection(section, e)
         for (var i = 0; i < topLinks.length; i++)
         {
             if (topLinks[i].getAttribute("href").substr(1) === section)
-                topLinks[i].parentElement.style.backgroundColor = "red";
+                topLinks[i].parentElement.style.backgroundColor = "#9999a1";
             else
             {
                 topLinks[i].parentElement.style.backgroundColor = "";
@@ -65,12 +65,10 @@ function updateSection(section, e)
             }
         }
     }
-    if (!visibleElement)
+    if ((!visibleElement) && (list.length > 0))
     {
         updateSection(list[0].id)
-    }
-
-    
+    }    
 }
 
 
@@ -121,3 +119,30 @@ for (var i = 0; i < a.length; i++) {
 
 var h = window.location.hash;
 updateSection(h ? h.substr(1) : "", null);
+
+if (window.innerWidth < 400)
+{
+    
+}
+
+
+function nameMediaMatchChanged(mediaMatch)
+{
+    if (mediaMatch.matches)
+    {
+        let n = document.querySelector("body>nav>ul>li>a");
+        n.innerHTML="DG";
+        n.style.fontSize = "110%";
+    }
+    else
+    {
+        let n = document.querySelector("body>nav>ul>li>a");
+        n.innerHTML="DAVID GUNDRY";
+        n.style.fontSize = "100%";
+        n.style.margin = "0"
+    }
+}
+
+var mediaMatch = window.matchMedia("(max-width: 360px)")
+nameMediaMatchChanged(mediaMatch);
+mediaMatch.addListener(nameMediaMatchChanged); 
