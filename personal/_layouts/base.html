@@ -22,7 +22,25 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@davegundry" />
     </head>
-    {{ content }}
-  <script type="text/javascript" src="/assets/js.js"></script>
+    <body>
+        <header>
+            <h1>David Gundry</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/index/">DAVID GUNDRY</a></li>
+                <li><a href="/cv/">CV</a></li>
+                <li><a href="/games/">Games</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+            {% if page.submenu %}
+            <nav>
+                {{ page.submenu }}
+            </nav>
+            {% endif %}
+        </nav>
+        {{ content }}
+    </body>
+    <script type="text/javascript" src="/assets/name.js"></script>
 </html>
 

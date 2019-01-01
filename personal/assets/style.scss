@@ -1,8 +1,27 @@
+---
+---
+
+$primary-color: white;
+$accent-color: #f61067;
+$dark-accent: #45062e;
+$text-color: #252323;
+$accent-text-color: white;
+
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
     font-size: 12pt;
     line-height: 2;
+    color: $text-color;
+    background-color: $primary-color;
+}
+
+a {
+    color: $accent-color;
+}
+
+a:visited {
+    color: $dark-accent;
 }
 
 h3 + p {
@@ -13,7 +32,7 @@ h3 {
     margin-bottom: 0.25em;
 }
 
-summary { padding-right: 0.5em; font-weight: bold;}
+summary { padding-right: 0.5em; }
 
 /*li > details > summary { position: relative; }
 details > * { position: absolute; left: 0;}
@@ -22,31 +41,22 @@ li:nth-child(2) >  details > * { position: absolute; left: 100px;}*/
 body > header h1 {
     padding: 5px;
     margin:0;
-    background-color: red;
+    background-color: $primary-color;
     display: none;
 }
 
 body > nav {
-    color: white;
+    background-color: $accent-color;
+    color: $accent-text-color;
 }
 
-body > nav a {
-    color: white;
+body > nav a, body > nav a:visited {
+    color: $accent-text-color;
     text-decoration: none;
     display: inline-block;
 }
 
 /* "border-bottom: 1px dashed white;"*/
-
-body > nav h2
-{
-    font-size: 11pt;
-    margin:0;
-}
-
-body > nav {
-    background-color: #f61067;
-}
 
 body > nav ul {
     margin:0;
@@ -60,15 +70,10 @@ body > nav > ul > li {
     padding: 5px;
 }
 
-
 body > nav > ul > li:first-of-type {
     font-size: 12pt;
     padding: 15px 10px 15px 5px;
     font-weight: bold;
-}
-
-body > nav > nav {
-    background-color: #66666e;
 }
 
 body > nav > nav > ul {

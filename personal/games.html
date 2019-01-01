@@ -1,49 +1,42 @@
 ---
-layout: base
+layout: multi-page
 title: Games
 permalink: /games/
+submenu: <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><details><summary>Games</summary>
+            <ul>
+                <li><a href="#pastry-chefs">Pastry Chefs</a></li>
+                <li><a href="#pass-my-pants">Pass My Pants</a></li>
+                <li><a href="#go-right">Go Right and Get Points</a></li>
+                <li><a href="#dr-allophone">Flying Machine</a></li>
+                <li><a href="#escape">Escape from New Cross</a></li>
+                <li><a href="#roguelike">Phaser Roguelike</a></li>
+            </ul></details>
+        </li>
+        <li><details><summary>Other</summary>
+            <ul>
+                <li><a href="#csms">Live Action CMS</a></li>
+                <li><a href="#personal">Personal Website</a></li>
+            </ul></details>
+        </li>
+    </ul>
 ---
-<body>
-{%- include header.html -%}
 
-<nav>
-    {%- include pages-list.html -%}
-    <nav>
-        <ul>
-            <li><details><summary>Games</summary>
-                <ul>
-                    <li><a href="#pastry-chefs">Pastry Chefs</a></li>
-                    <li><a href="#pass-my-pants">Pass My Pants</a></li>
-                    <li><a href="#go-right">Go Right and Get Points</a></li>
-                    <li><a href="#dr-allophone">Flying Machine</a></li>
-                    <li><a href="#escape">Escape from New Cross</a></li>
-                    <li><a href="#roguelike">Phaser Roguelike</a></li>
-                </ul></details>
-            </li>
-            <li><details><summary>Demos</summary>
-                <ul>
-                    <li><a href="#platform-gen">Platform Level Generator</a></li>
-                    <li><a href="#dungeon">Dungeon Generator</a></li>
-                </ul></details>
-            </li>
-            <li><details><summary>Web</summary>
-                <ul>
-                    <li><a href="#csms">Live Action CMS</a></li>
-                    <li><a href="#personal">Personal Website</a></li>
-                </ul></details>
-            </li>
-        </ul>
-    </nav>
-</nav>
+<section id="intro">
+    <a name="intro"></a>
+    <h2>Intro</h2>
+    <p>I make games.</p>
+    <p>Here you will find examples of some of the games I have made, as well as some other projects.</p>
+</section>
 
-<main aria-label="Content">
 <section id="pastry-chefs">
-        <a name="pastry-chefs"></a>
-        <h2>Pastry Chefs</h2>
-        <p>A game of competative pastry-baking.</p>
-        <hr />
-        <p>This was originally designed as an <strong>applied game</strong> to get its players to use a particular linguistic structure. It is part of my PhD research into the design of applied games for <strong>data collection</strong>. The challenge of making applied games for data collection is that they need to both be <em>good games</em> and <em>good measurement instruments</em>. If it's not fun to play, it won't have ecological validity, that is, it won't count as a <em>real</em> game.</p>
-        <p>Designing an applied game is all about balancing competing requirements and constraints.</p>
+    <a name="pastry-chefs"></a>
+    <h2>Pastry Chefs</h2>
+    <p>A game of competative pastry-baking.</p>
+    <hr />
+    <p>This was originally designed as an <strong>applied game</strong> to get its players to use a particular linguistic structure. It is part of my PhD research into the design of applied games for <strong>data collection</strong>. The challenge of making applied games for data collection is that they need to both be <em>good games</em> and <em>good measurement instruments</em>. If it's not fun to play, it won't have ecological validity, that is, it won't count as a <em>real</em> game.</p>
+    <p>Designing an applied game is all about balancing competing requirements and constraints.</p>
 </section>
 
 <section id="pass-my-pants">
@@ -61,7 +54,6 @@ permalink: /games/
     <p>Swing between platforms, collect the lights, but don't fall into the fog.</p>
     <hr />
     <p>A game about moreish but hollow rewards. Just enough pressure to keep you moving forwards while staying relaxing. A drip feed of rewards. Just enough challenge to require effort, but you respawn straight into the game to give no stopping point. The fog itself just goes on and on.</p>
-    <p>Flow is a psychological state characterised by getting lost in a task or a game. Good games give an experience of flow.</p>
     <iframe style="position:relative; left: -36px;" src="https://itch.io/embed/72584" width="552" height="167" frameborder="0"></iframe>
 </section>
 
@@ -116,8 +108,8 @@ permalink: /games/
     <a href="/assets/images/csms-impact1.png"><img src="/assets/images/csms-impact1.png" /></a>
     <a href="/assets/images/csms-impact2.png"><img src="/assets/images/csms-impact2.png" /></a>
     <h2>Character Sheet Management System</h2>
-    <p>This is a content management system written in PHP backed by MYSQL. It was used to manage two live action roleplaying games at the University of York, serving around 60 users. The CMS allows user to access their character sheets, provides support for skill trees, and supports communication between game sessions.</p>
-    <p>I co-ran a small campus LARP with around 20 players. We needed a solution to manage our players' character sheets. Previous LARPs at York had used a similar system, but this was inaccessible. The CSMS also integrated support for downtimes and character skill management, which were significant additional features for helping to manage the game.</p>
+    <p>I developed a content management system that has been used to manage two live action roleplaying games at the University of York, serving around 60 users. It allows user to access their character sheets and provides support for skill trees and player management.</p>
+    <!--<p>I co-ran a small campus LARP with around 20 players. We needed a solution to manage our players' character sheets. Previous LARPs at York had used a similar system, but this was inaccessible. The CSMS also integrated support for downtimes and character skill management, which were significant additional features for helping to manage the game.</p>-->
     <ul>
         <li><a href="">See the code on GitHub</a></li>
     </ul>
@@ -128,14 +120,11 @@ permalink: /games/
     <a href="/assets/images/personal-code.png"><img src="/assets/images/personal-code.png" /></a>
     <a href="/assets/images/personal-frontpage.png"><img src="/assets/images/personal-frontpage.png" /></a>
     <h2>My Personal Website</h2>
-    <p>This website has been designed following principles of interaction design, and devloped with a focus on clean code and separation of concerns between HTML, CSS, and Javascript.</p>
-    <p>The HTML does what it is designed for: marking up the content expressively. Non-semantic tags and visual/script-only elements are avoided to make it maximally agnostic to the visual design.</p>
-    <p>Few sites, if well designed, should require Javascirpt. This website is designed first for non-javascript devices (eg. accesibility devices and printing). The javascript adapts this to provide a user interaction design that cannot be achieved without scripting.</p>
+    <p>This website has been designed following principles of interaction design, and devloped with a focus on clean code and separation of concerns between HTML, CSS, and Javascript. The HTML does what it is designed for: marking up the content expressively. Non-semantic tags and visual/script-only elements are avoided to make it maximally agnostic to the visual design.</p>
+    <!--<p>Few sites, if well designed, should require Javascirpt. This website is designed first for non-javascript devices (eg. accesibility devices and printing). The javascript adapts this to provide a user interaction design that cannot be achieved without scripting.</p>-->
     <ul>
         <li><a href="">See the code on GitHub</a></li>
     </ul>
 </section>
-</main>
 
 <script type="text/javascript" src="/assets/games.js"></script>
-</body>
