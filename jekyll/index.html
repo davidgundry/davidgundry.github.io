@@ -5,33 +5,31 @@ description: I am David Gundry, a PhD student at the University of York. I make 
 ---
 
 <style>
-    h1:first-of-type::before {
-        color: white;
-        font-size: 100pt;
-        content:'\25c7';
-        line-height: 150%;
-        display:block;
 
-    }
-    h1:nth-of-type(2)::before {
+    section:first-of-type > h1::before { content:'\25c7'; }
+    section:nth-of-type(2) > h1::before { content:'<>'; }
+    section:nth-of-type(3) > h1::before { content:'<e>'; }
+
+    header > h1 { 
         color: white;
-        font-size: 100pt;
-        content:'<>';
-        line-height: 150%;
-        display:block;
+        
+        font-size: 25pt;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,0);
     }
 </style>
-
 
 <section>
     <h1>I do design, development and research.</h1>
 </section>
 
 <section>
-    <h1>Design is imagining possible worlds</h1>
+    <h1>I build games, apps, and websites with expressive code</h1>
 </section>
 
 <section>
-    <h1>Code is building new worlds</h1>
+    <h1>I'm also a linguist.<br /> <a href="/cv/">Find out more</a></h1>
 </section>
     

@@ -5,6 +5,8 @@ layout: base
 <style>
     body { background-color: #f61067; }
 
+    a, a:hover, a:visited { color: #cecfc7;}
+    
     main
     {
         color: white;
@@ -26,6 +28,14 @@ layout: base
         transform: translate(0,-50%);
         font-size: 200%;
         font-weight: normal;
+        margin-top:-0.5em;
+    }
+
+    section > h1::before {
+        color: white;
+        font-size: 100pt;
+        line-height: 150%;
+        display:block;
     }
 
     body > footer { display: none; }
