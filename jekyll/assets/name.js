@@ -3,7 +3,7 @@ function nameMediaMatchChanged(mediaMatch) {
     {
         let n = document.querySelector("body>nav>ul>li:first-child");
         let a = n.querySelector("a");
-        let t = a || b;
+        let t = a || n;
         t.innerHTML = "DG";
         t.style.fontSize = "110%";
     }
@@ -11,12 +11,12 @@ function nameMediaMatchChanged(mediaMatch) {
     {
         let n = document.querySelector("body>nav>ul>li:first-child");
         let a = n.querySelector("a");
-        let t = a || b;
+        let t = a || n;
         t.innerHTML = "DAVID GUNDRY";
         t.style.fontSize = "100%";
     }
 }
 
-var mediaMatch = window.matchMedia("(max-width: 360px)")
+var mediaMatch = window.matchMedia("(max-width: 410px)")
 nameMediaMatchChanged(mediaMatch);
 mediaMatch.addListener(nameMediaMatchChanged); 

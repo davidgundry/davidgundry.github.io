@@ -7,9 +7,13 @@ function updateSection(section, e) {
         var topLinks = document.querySelector("nav").getElementsByTagName("a");
         for (var i = 0; i < topLinks.length; i++) {
             if (topLinks[i].getAttribute("href").substr(1) === section)
+            {
                 topLinks[i].parentElement.style.backgroundColor = "#61707d";
+                topLinks[i].style.pointerEvents = "none";
+            }
             else {
                 topLinks[i].parentElement.style.backgroundColor = "";
+                topLinks[i].style.pointerEvents = "auto";
             }
 
         }
@@ -27,6 +31,7 @@ function updateSection(section, e) {
             list[i].hidden = false;
             visibleElement = true;
 
+            /*
             var leftButton = document.querySelector("#sideButton_left")
             if (leftButton) {
                 if (i > 0) {
@@ -48,7 +53,7 @@ function updateSection(section, e) {
                     rightButton.href = "";
                     rightButton.hidden = true;
                 }
-            }
+            }*/
         }
     }
     if ((!visibleElement) && (list.length > 0)) {
@@ -57,7 +62,7 @@ function updateSection(section, e) {
 }
 
 
-
+/*
 function createSideButton(parent, content, side) {
     var button = document.createElement("a");
     button.id = "sideButton_" + side;
@@ -82,7 +87,7 @@ function mediaMatchChanged(mediaMatch) {
         document.querySelector("#sideButtons").hidden = false;
     else
         document.querySelector("#sideButtons").hidden = true;
-}
+}*/
 
 function createLinks()
 {
@@ -95,6 +100,8 @@ function createLinks()
             child.innerHTML = "Next >";
             child.href = "#"+list[i+1].id;
             child.style.cssFloat="right";
+            child.style.marginTop="20px";
+            child.style.marginBottom="40px";
             list[i].appendChild(child);//, list[i].firstChild);
         }
 
@@ -104,6 +111,8 @@ function createLinks()
             child.innerHTML = "< Back";
             child.href = "#"+list[i-1].id;
             child.style.cssFloat="left";
+            child.style.marginTop="20px";
+            child.style.marginBottom="40px";
             list[i].appendChild(child);//, list[i].firstChild);
         }
         

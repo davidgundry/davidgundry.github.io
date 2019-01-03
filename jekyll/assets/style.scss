@@ -4,12 +4,14 @@
 $primary-color: white;
 $accent-color: #f61067;
 $dark-accent: #45062e;
+$light-accent: #cecfc7;
 $text-color: #252323;
 $accent-text-color: white;
+$font-stack:  "Lato", sans-serif;
 
 body {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: $font-stack;
     font-size: 12pt;
     line-height: 2;
     color: $text-color;
@@ -19,6 +21,8 @@ body {
 a { color: $accent-color; }
 
 a:visited { color: $dark-accent; }
+
+h1 { line-height: 150%;}
 
 h3 + p { margin-top: 0; }
 
@@ -39,6 +43,7 @@ body > header h1 {
 body > nav {
     background-color: $accent-color;
     color: $accent-text-color;
+    width: 100%;
 }
 
 body > nav a, body > nav a:visited {
@@ -84,6 +89,12 @@ main {
     margin: 0 auto;
     max-width: 480px;
     clear: both;
+    margin-bottom: 3em;
+}
+
+main ul
+{
+    margin-left: 1em;
 }
 
 main > section > * {padding: 0 5px;}
@@ -92,3 +103,17 @@ main > section hr { width: 75%; margin: 2em auto; }
 main > section > a:nth-of-type(2) > img { width: 66%; }
 main > section img  { width: 34%; float: left; }
 main > section a[href] + h2  { padding-top: 1em; clear: both; }
+
+body { min-height: 100vh }
+
+main { min-height: 100%; }
+
+body > footer
+{
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid $light-accent;
+}

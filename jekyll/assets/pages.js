@@ -101,6 +101,7 @@ function createLinks()
             child.href = "#"+list[i+1].id;
             child.style.cssFloat="right";
             child.style.marginTop="20px";
+            child.style.marginBottom="40px";
             list[i].appendChild(child);//, list[i].firstChild);
         }
 
@@ -111,6 +112,7 @@ function createLinks()
             child.href = "#"+list[i-1].id;
             child.style.cssFloat="left";
             child.style.marginTop="20px";
+            child.style.marginBottom="40px";
             list[i].appendChild(child);//, list[i].firstChild);
         }
         
