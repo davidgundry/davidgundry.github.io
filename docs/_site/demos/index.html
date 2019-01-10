@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>David Gundry &mdash; Demos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    
+        <meta property="og:url"         content="http://localhost:4000/demos/" />
+        <meta property="og:type"        content="website" />
+        <meta property="og:title"       content="David Gundry &mdash; Demos">
+        <meta property="og:description" content="">
+        <meta property="og:image"       content="" />
+    
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@davegundry" />
+    </head>
+    <body>
+        <header>
+            <h1>David Gundry</h1>
+        </header>
+        <nav>
+            <ul>
+            
+                <li><a href="/index/">DAVID GUNDRY</a></li>
+            
+            
+                <li><a href="/cv/">CV</a></li>
+            
+            
+            <li><a href="/research/">Research</a></li>
+            
+            <!--
+                <li><a href="/games/">Games</a></li>
+            
+            
+                <li style="border-bottom: 1px dashed white">Demos</li>
+            -->
+            
+                <li><a href="/blog/">Blog</a></li>
+            
+            </ul>
+            
+            <nav>
+                <ul> <li><a href="#demos">Demos</a></li> <li><details><summary>Game( Jam)</summary> <ul> <li><a href="#go-right">Go Right and Get Points</a></li> <li><a href="#dr-allophone">Flying Machine</a></li> <li><a href="#escape">Escape from New Cross</a></li> <li><a href="#roguelike">Phaser Roguelike</a></li> </ul></details> </li> <li><details><summary>Web</summary> <ul> <li><a href="#csms">Live Action CMS</a></li> <li><a href="#personal">Personal Website</a></li> </ul></details> </li> <li><details><summary>Other</summary> <ul> <li><a href="#dungeon">Dense Dungeon Generator</a></li> <li><a href="#platform-gen">PlatformGen</a></li> </ul></details> </li> </ul>
+            </nav>
+            
+        </nav>
+        <main aria-label="Content">
+            <section id="demos">
+    <a name="demos"></a>
+    <h2>Demos</h2>
+    <p>Here you will find examples of some of the demos I have made, as well as some other projects.</p>
+    <ul style="list-style-type: none">
+        <li>Game( Jam)s
+            <ul>
+                <li><a href="#go-right">Go Right and Get Points</a></li>
+                <li><a href="#dr-allophone">Flying Machine</a></li>
+                <li><a href="#escape">Escape from New Cross</a></li>
+                <li><a href="#roguelike">Phaser Roguelike</a></li>
+            </ul>
+        </li>
+        <li>Web
+            <ul>
+                <li><a href="#csms">Live Action CMS</a></li>
+                <li><a href="#personal">Personal Website</a></li>
+            </ul>
+        </li>
+        <li>Other
+            <ul>
+                <li><a href="#dungeon">Dense Dungeon Generator</a></li>
+                <li><a href="#platform-gen">PlatformGen</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="go-right">
+    <a name="go-right"></a>
+    <h2>Go Right and Get Points</h2>
+    <p>Swing between platforms, collect the lights, but don't fall into the fog.</p>
+    <hr />
+    <p>A game about moreish but hollow rewards. Just enough pressure to keep you moving forwards while staying relaxing. A drip feed of rewards. Just enough challenge to require effort, but you respawn straight into the game to give no stopping point. The fog itself just goes on and on.</p>
+    <iframe style="position:relative; left: -36px;" src="https://itch.io/embed/72584" width="552" height="167" frameborder="0"></iframe>
+</section>
+
+<section id="dr-allophone">
+    <a name="dr-allophone"></a>
+    <h2>Doctor Allophone's Fantastic Phonetic Flying Machine</h2>
+    <p>Doctor Allophone has completed his latest invention - a speech-powered flying machine! But after a mishap, you must take to the controls to recover his lost designs.</p>
+    <hr />
+    <p>I made this game in 24 hours for the Heritige Game Jam run by the National Archives.</p>
+    <p>It is developed in Unity for mobile devices. The YIN pitch detection algorithm is adapted to provide speech detection. The device's accelerometer controls left-right movement. A simple procedural content generator provides an endless stream of nonsense inventions, included to give you something to say.</p>
+    <p>My goal with this game was to see how providing prompts could make players more likely to use speech input in games.</p>
+    <ul>
+        <li>See the code on GitHub</li>
+    </ul>
+    <iframe style="position:relative; left: -36px;" src="https://itch.io/embed/72321" width="552" height="167" frameborder="0"></iframe>
+</section>
+    
+<section id="escape">
+    <a name="escape"></a>
+    <h2>Escape from New Cross</h2>
+    <p>You're lost in a maze reminicent of the London Underground being stalked by ghosts. Collect all the dots to escape in this Pacman-like.</p>
+    <hr />
+    <p>I made this game with a collegue in a week at the IGGI Game Development course in London's New Cross.</p>
+    <ul>
+        <li>See the code on GitHub</li>
+    </ul>
+</section>
+
+<section id="roguelike">
+        <a name="roguelike"></a>
+        <a href="/assets/images/roguelike1.png"><img src="/assets/images/roguelike1.png" /></a>
+        <h2>A Phaser Roguelike</h2>
+        <!--set width to 208 on mobile-->
+        <iframe style="position:relative; left: -36px;" src="https://itch.io/embed/243415" width="552" height="167" frameborder="0"></iframe>
+</section>
+
+<section id="platform-gen">
+    <a name="platform-gen"></a>
+    <h2>Platform Level Generator</h2>
+    <p>Inspired by a game idea and coded in the IGGI Game Development module, this is a Javascript app that generates maze-like 3D platforms.</p>
+    <p>Multiple A* agents navigate through space while laying a path behind them.</p>
+    <p>Refresh the page to run the generator.</p>
+</section>
+
+<section id="dungeon">
+    <a name="dungeon"></a>
+    <h2>Dense Dungeon Generator</h2>
+</section>
+
+<section id="csms">
+    <a name="csms"></a>
+    <a href="/assets/images/csms-impact1.png"><img src="/assets/images/csms-impact1.png" /></a>
+    <a href="/assets/images/csms-impact2.png"><img src="/assets/images/csms-impact2.png" /></a>
+    <h2>Character Sheet Management System</h2>
+    <p>I developed a content management system that has been used to manage two live action roleplaying games at the University of York, serving around 60 users. It allows user to access their character sheets and provides support for skill trees and player management.</p>
+    <!--<p>I co-ran a small campus LARP with around 20 players. We needed a solution to manage our players' character sheets. Previous LARPs at York had used a similar system, but this was inaccessible. The CSMS also integrated support for downtimes and character skill management, which were significant additional features for helping to manage the game.</p>-->
+    <ul>
+        <li><a href="">See the code on GitHub</a></li>
+    </ul>
+</section>
+
+<section id="personal">
+    <a name="personal"></a>
+    <a href="/assets/images/personal-code.png"><img src="/assets/images/personal-code.png" /></a>
+    <a href="/assets/images/personal-frontpage.png"><img src="/assets/images/personal-frontpage.png" /></a>
+    <h2>My Personal Website</h2>
+    <p>This website has been designed following principles of interaction design, and devloped with a focus on clean code and separation of concerns between HTML, CSS, and Javascript. The HTML does what it is designed for: marking up the content expressively. Non-semantic tags and visual/script-only elements are avoided to make it maximally agnostic to the visual design.</p>
+    <!--<p>Few sites, if well designed, should require Javascirpt. This website is designed first for non-javascript devices (eg. accesibility devices and printing). The javascript adapts this to provide a user interaction design that cannot be achieved without scripting.</p>-->
+    <ul>
+        <li><a href="">See the code on GitHub</a></li>
+    </ul>
+</section>
+
+<script type="text/javascript" src="/assets/games.js"></script> 
+
+<script type="text/javascript" src="/assets/pages.js"></script>
+        </main>
+        <footer>
+            <a href="mailto:david@gundry.co.uk">david@gundry.co.uk</a><br />
+            <a href="https://twitter.com/davegundry">@davegundry</a>
+        </footer>
+    </body>
+    <script type="text/javascript" src="/assets/name.js"></script>
+</html>
+
