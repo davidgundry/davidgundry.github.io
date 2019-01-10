@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 title: Parental Leave and my PhD
 permalink: parental-leave-and-my-phd
 ---
