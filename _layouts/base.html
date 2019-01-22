@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Keywords" content="">
         <meta name="Description" content="">
+        
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -23,6 +24,7 @@
         <header>
             <h1>David Gundry</h1>
         </header>
+
         <nav>
             <ul>
             {%- if page.title != "Home" %}
@@ -62,7 +64,8 @@
             </nav>
             {%- endif %}
         </nav>
-        <main aria-label="Content">
+
+        <main>
             {{ content | indent: 12 }}
         </main>
 
@@ -70,7 +73,6 @@
             <a href="mailto:david@gundry.co.uk">david@gundry.co.uk</a><br />
             
             <a href="https://twitter.com/davegundry">@davegundry</a>
-
         </footer>
 
         <script type="text/javascript" src="/assets/name.js"></script>

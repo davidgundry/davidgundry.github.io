@@ -17,6 +17,6 @@ function nameMediaMatchChanged(mediaMatch) {
     }
 }
 
-var mediaMatch = window.matchMedia("(max-width: 410px)")
+var mediaMatch = window.matchMedia("(max-width: 319px)")
 nameMediaMatchChanged(mediaMatch);
 mediaMatch.addListener(nameMediaMatchChanged); 
