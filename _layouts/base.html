@@ -6,19 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Keywords" content="">
         <meta name="Description" content="">
-        
+
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/style.css">
+        {%- if page.additional-style %}
+        <link rel="stylesheet" href="/assets/{{ page.additional-style }}">
+        {%- endif %}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     
-        <meta property="og:url"         content="{{ site.url }}{{ page.url }}" />
-        <meta property="og:type"        content="website" />
+        <meta property="og:url"         content="{{ site.url }}{{ page.url }}">
+        <meta property="og:type"        content="website">
         <meta property="og:title"       content="David Gundry &mdash; {{ page.title }}">
         <meta property="og:description" content="{{ page.description }}">
-        <meta property="og:image"       content="{{ page.image }}" />
+        <meta property="og:image"       content="{{ page.image }}">
     
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@davegundry" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@davegundry">
     </head>
     <body>
         <header>
@@ -75,6 +78,7 @@
             <a href="https://twitter.com/davegundry">@davegundry</a>
         </footer>
 
-        <script type="text/javascript" src="/assets/name.js"></script>
+        {%- comment -%} <script type="text/javascript" src="/assets/name.js"></script>{%- endcomment %} 
+
     </body>
 </html>
