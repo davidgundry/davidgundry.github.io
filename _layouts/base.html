@@ -25,51 +25,54 @@
         </header>
         <nav>
             <ul>
-            {% if page.title != "Home" %}
+            {%- if page.title != "Home" %}
                 <li><a href="/">DAVID GUNDRY</a></li>
-            {% else %}
+            {%- else %}
                 <li>DAVID GUNDRY</li>
-            {% endif %}
-            {% if page.title != "CV" %}
+            {%- endif %}
+            {%- if page.title != "CV" %}
                 <li><a href="/cv/">CV</a></li>
-            {% else %}
+            {%- else %}
                 <li style="border-bottom: 1px dashed white">CV</li>
-            {% endif %}
-            {% if page.title != "Research" %}
-            <li><a href="/research/">Research</a></li>
-            {% else %}
+            {%- endif %}
+            {%- if page.title != "Research" %}
+                <li><a href="/research/">Research</a></li>
+            {%- else %}
                 <li style="border-bottom: 1px dashed white">Research</li>
-            {% endif %}
-            <!--{% if page.title != "Games" %}
+            {%- endif %}
+            {%- comment %} {%- if page.title != "Games" %}
                 <li><a href="/games/">Games</a></li>
-            {% else %}
+            {%- else %}
                 <li style="border-bottom: 1px dashed white">Games</li>
-            {% endif %}
-            {% if page.title != "Demos" %}
+            {%- endif %}
+            {%- if page.title != "Demos" %}
                 <li><a href="/demos/">Demos</a></li>
-            {% else %}
+            {%- else %}
                 <li style="border-bottom: 1px dashed white">Demos</li>
-            {% endif %}-->
-            {% if page.title != "Blog" %}
+            {%- endif %} {%- endcomment %}
+            {%- if page.title != "Blog" %}
                 <li><a href="/blog/">Blog</a></li>
-            {% else %}
+            {%- else %}
                 <li style="border-bottom: 1px dashed white">Blog</li>
-            {% endif %}
+            {%- endif %}
             </ul>
-            {% if page.submenu %}
+            {%- if page.submenu %}
             <nav>
                 {{ page.submenu }}
             </nav>
-            {% endif %}
+            {%- endif %}
         </nav>
         <main aria-label="Content">
-            {{ content }}
+            {{ content | indent: 12 }}
         </main>
+
         <footer>
             <a href="mailto:david@gundry.co.uk">david@gundry.co.uk</a><br />
+            
             <a href="https://twitter.com/davegundry">@davegundry</a>
-        </footer>
-    </body>
-    <script type="text/javascript" src="/assets/name.js"></script>
-</html>
 
+        </footer>
+
+        <script type="text/javascript" src="/assets/name.js"></script>
+    </body>
+</html>
