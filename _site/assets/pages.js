@@ -12,12 +12,13 @@ function addInternalLinkEventListeners()
 
 function internalLinkClicked(anchor, event)
 {
+    var section = anchor.getAttribute("href").substring(1);
     if (event)
     {
         event.preventDefault();
         window.location = "#" + section;
     }
-    updateCurrentSection(anchor.getAttribute("href").substring(1));
+    updateCurrentSection(section);
 }
 
 function updateCurrentSection(section)
@@ -71,13 +72,13 @@ function createSectionLinks()
     for (var i=0;i<list.length;i++)
     {
         if (i < list.length-1)
-            list[i].appendChild(createNextLink(list));
+            list[i].appendChild(createNextLink(list, i));
         if (i > 0)
-            list[i].appendChild(createBackLink(list));
+            list[i].appendChild(createBackLink(list, i));
     }
 }
 
-function createNextLink(list)
+function createNextLink(list, i)
 {
     var child = document.createElement('a');
     child.innerHTML = "Next >";
@@ -88,7 +89,7 @@ function createNextLink(list)
     return child;
 }
 
-function createBackLink(list)
+function createBackLink(list, i)
 {
     var child = document.createElement('a');
     child.innerHTML = "< Back";
