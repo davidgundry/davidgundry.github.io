@@ -92,17 +92,19 @@ function mediaMatchChanged(mediaMatch) {
 function createLinks()
 {
     var list = document.querySelector("main").getElementsByTagName("section");
+    var x = window.matchMedia("(print)")
+
     for (var i=0;i<list.length;i++)
     {
+        var child = document.createElement('a');
         if (i < list.length-1)
         {
-            var child = document.createElement('a');
             child.innerHTML = "Next >";
             child.href = "#"+list[i+1].id;
             child.style.cssFloat="right";
             child.style.marginTop="20px";
             child.style.marginBottom="40px";
-            list[i].appendChild(child);//, list[i].firstChild);
+            list[i].appendChild(child);
         }
 
         if (i > 0)
@@ -113,14 +115,10 @@ function createLinks()
             child.style.cssFloat="left";
             child.style.marginTop="20px";
             child.style.marginBottom="40px";
-            list[i].appendChild(child);//, list[i].firstChild);
+            list[i].appendChild(child);
         }
-        
-
     }
 }
-
-
 
 var h = window.location.hash;
 updateSection(h ? h.substr(1) : "", null);

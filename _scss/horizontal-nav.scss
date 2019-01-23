@@ -1,3 +1,7 @@
+@media print { 
+    body > nav { display: none; }
+} 
+
 body > nav {
     background-color: $accent-color;
     color: $accent-text-color;

@@ -20,10 +20,11 @@ body { margin: 0; min-height: 100vh; }
 
 main { margin: 0 auto; max-width: 40rem; clear: both; overflow: auto; }
 
-main > * { padding: 0 0.5rem; }
+@media not print { main > * { padding: 0 0.5rem; } }
+body > header h1 { padding: 5px; margin: 0; background-color: white; display: none; font-size: 170%; }
 
-body > header h1 { padding: 5px; margin: 0; background-color: white; display: none; }
-
+@media print { body > header h1 { display: inline-block; } }
+@media print { body > nav { display: none; } }
 body > nav { background-color: #f61067; color: white; width: 100%; line-height: 2; }
 
 body > nav summary { padding-right: 0.5rem; cursor: pointer; }
@@ -52,6 +53,10 @@ body > nav > nav > ul ul > li a { padding: 0; }
 
 body > nav > nav > ul > ul { margin-right: 10px; }
 
-body { position: relative; padding-bottom: 5rem; min-height: 100vh; }
-
-body > footer { position: absolute; right: 0; bottom: 0; left: 0; background-color: white; border-top: 1px solid #cecfc7; text-align: right; padding: 0.25rem 0; line-height: 1.75; }
+@media not print { body { position: relative; padding-bottom: 5rem; min-height: 100vh; }
+  body > footer { position: absolute; right: 0; bottom: 0; left: 0; background-color: white; border-top: 1px solid #cecfc7; text-align: right; padding: 0.25rem 0; line-height: 1.75; } }
+@media print { body > footer { display: none; } }
+@media print { html { line-height: 1.5; }
+  section { display: block; }
+  section a[href^="#"] { display: none; }
+  abbr { text-decoration: none; } }

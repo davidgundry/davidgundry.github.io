@@ -8,13 +8,14 @@ $light-accent: #cecfc7;
 $text-color: #252323;
 $accent-text-color: white;
 $font-size: 12pt;
+$line-height: 2;
 $font-stack:  "Lato", sans-serif;
 
 html {
     box-sizing: border-box;
     font-size: $font-size;
     font-family: $font-stack;
-    line-height: 2;
+    line-height: $line-height;
     color: $text-color;
     background-color: $primary-color;
 }
@@ -49,8 +50,18 @@ main {
     overflow: auto;
 }
 
-main > * {padding: 0 0.5rem;}
+
+@media not print { 
+    main > * {padding: 0 0.5rem;}
+}
 
 @import "header";
 @import "horizontal-nav";
 @import "footer";
+
+@media print { 
+    html { line-height: 1.5;}
+    section { display: block; }
+    section a[href^="#"] { display: none; }
+    abbr { text-decoration: none; }
+}
