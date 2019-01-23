@@ -1,17 +1,16 @@
-function nameMediaMatchChanged(mediaMatch) {
+function nameMediaMatchChanged(mediaMatch)
+{
+    let n = document.querySelector("body>nav>ul>li:first-child");
+    let a = n.querySelector("a");
+    let t = a || n;
+
     if (mediaMatch.matches)
     {
-        let n = document.querySelector("body>nav>ul>li:first-child");
-        let a = n.querySelector("a");
-        let t = a || n;
         t.innerHTML = "DG";
         t.style.fontSize = "110%";
     }
     else
     {
-        let n = document.querySelector("body>nav>ul>li:first-child");
-        let a = n.querySelector("a");
-        let t = a || n;
         t.innerHTML = "DAVID GUNDRY";
         t.style.fontSize = "100%";
     }
