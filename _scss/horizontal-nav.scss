@@ -1,0 +1,54 @@
+body > nav {
+    background-color: $accent-color;
+    color: $accent-text-color;
+    width: 100%;
+    line-height: 2;
+}
+
+body > nav summary {
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+body > nav a,
+body > nav a:visited {
+    color: $accent-text-color;
+    text-decoration: none;
+    display: inline-block;
+}
+
+body > nav a:hover { color: $light-accent;  }
+
+body > nav ul {
+    margin: 0;
+    padding: 12px 0 12px 0;
+    overflow: hidden;
+}
+
+body > nav > ul > li {
+    display: inline;
+    font-size: 110%;
+    padding: 5px;
+}
+
+body > nav > ul > li a:not([href]) { border-bottom: 1px dashed $accent-text-color; }
+
+body > nav > ul > li:first-of-type {
+    font-size: 100%;
+    padding: 15px 10px 15px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body > nav > nav> ul > li {
+    list-style-type: none;
+    font-size: 90%;
+    float: left;
+    padding: 3px 7px;
+}
+
+body > nav > nav > ul { padding: 0; }
+body > nav > nav > ul ul { padding: 0; }
+body > nav > nav > ul ul > li { padding: 3px; }
+body > nav > nav > ul ul > li  a { padding: 0; }
+body > nav > nav > ul > ul { margin-right: 10px; }

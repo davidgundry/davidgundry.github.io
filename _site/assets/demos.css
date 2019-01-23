@@ -1,0 +1,5 @@
+main > section hr { width: 75%; margin: 2rem auto; }
+
+main > section > a:nth-of-type(2) > img { width: 66%; }
+
+main > section img { width: 34%; float: left; }
