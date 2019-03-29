@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <title>Play Game</title>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body style="margin:0;">
+        <div id="gameTarget" style="position: fixed; top:0; left: 0; width:100vw; height:100vh; overflow:hidden; text-align: center; background-color: black">
+            <div id="barOuter" style="background-color: white; width: 100px; height: 10px; position: absolute; left: 50%; top: 80%; border: 0px solid black; transform: translate(-50%, -50%);">
+                <div id="barInner" style="width: 0px; height: 100%; background-color: grey;"></div>
+                <div id="barText" style="font-size: 8pt; position: absolute; color: white; left: 50%; top:100%; transform: translate(-50%, 0%);"></div>
+            </div>
+            <div id="installButton" style="position: fixed; top:0; left: 0;
+                                            visibility: hidden;
+                                            width:100vw;
+                                            height:60px;
+                                            overflow:hidden;
+                                            text-align: center;
+                                            background-color: white;
+                                            font-size: 24pt;
+                                            font-family: sans-serif;
+                                            padding-top: 20px;">
+                Install as a web app.
+            </div>
+        </div>
+        
+        <script src="loader.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
