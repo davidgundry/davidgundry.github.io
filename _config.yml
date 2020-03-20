@@ -31,8 +31,7 @@ exclude:
   - dev
   - Gemfile
   - Gemfile.lock
-  - games.html
-  - demos.html
+
 
 sass:
   sass_dir: _scss
