@@ -3,6 +3,7 @@ layout: post
 title: Parental Leave and my PhD
 permalink: parental-leave-and-my-phd
 description: I ran into all sorts of bureaucratic challenges in trying to take shared parental leave as a PhD student.
+published: false
 ---
 
 ## Parental Leave and my PhD
